@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Nature website</title>
+</head>
+<body>
+    <nav id="navBar" class="navbar">
+        <div class="navbar-logo">
+            <h1>Wildlife</h1>
+        </div>
+        <div class="navbar-content">
+            <ul>
+                <li><a href="#heaDer">Home</a></li>
+                <li><a href="#Click">Photos</a></li>
+                <li><a href="#Photographers">Nature</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="heaDer" class="header">
+        <h1> &ensp; &nbsp; The  best of the <br> Nature Photography</h1>
+        <p>Winning images from national and international wildlife photography <br> competitions of the year.</p>
+        <a href="" class="btn" >view More </a>    
+    </header>
+
+    <section id="Click" class="click">
+        <h1>Explore the World</h1>
+        <p>Phasellus eget lacinia ipsum. Aliquam lectus tellus, cursus at fermentum id, hendrerit  <br> sollicitudin.</p>
+        <div class="click-photos">
+            <div class="click-photo">
+                <img src="./img/pexels-alex-andrews-2295744.jpg" alt="">
+                <h1>Roundup at Revillagigedo, by Ralph Pace, Big Picture wildlife images competition, aquatic life</h1>
+
+            </div>
+            <div class="click-photo">
+                <img src="./img/pexels-flickr-145962.jpg" alt="">
+                <h1>Dutch photographer Marsel van Oosten’s stunning portrait of two  golden snub-nosed monkeys</h1>
+            </div>
+            <div class="click-photo">
+                <img src="./img/pexels-guillaume-meurice-1894350.jpg" alt="">
+                <h1>Komodo Judo by Andrey Gudkov Two large male Komodo dragons hissing angrily at each other in national park.</h1>
+            </div>
+    </section>
+
+    <section id="Elephant" class="elephant">
+        <h1>&ensp; 50 Years of Wildlife <br> Photographer of the Year</h1>
+        <p>Natural History Museum’s new book released on Wednesday marks five decades of the WPY <br> competition, celebrating the art of wildlife photography. Started in the 1960s, the 160 prize-winning and <br> commended images represent 50 years of different times, styles and specialisms – showcasing some of <br> the iconic images of wildlife on planet Earth, part of an exhibition in London from 24 October</p>
+    </section>
+
+    <section id="Advise" class="advise">
+        <h1>Top scientists demand NSW commit <br> to brumby cull in Kosciuszko <br> national park</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet <br> purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor <br> commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet</p>
+    </section>
+    <section class="horses">
+
+    </section>
+    <section id="Photographers" class="photographers" >
+        <div class="photos">
+            <div class="photooooo">
+                <img src="./img/penguin.jpg" alt="penguin">
+            </div>
+            <div class="photooooo">
+                <img src="./img/octopus.jpg" alt="octopus">
+            </div>
+        </div>
+        
+        <h1>Top 10 Wildlife Photographers To Watch</h1>
+        <p>Millions of species of fauna and flora inhabit this vibrant and diverse world we live in. Sometimes we don’t even remember that there is <br> nature beyond our cities and our comfort zone. There is so much wildlife to captivate and capture. Thankfully photographers can share the <br> beauty of this world and bring us the wildlife scenes of animals that we would have otherwise never known.</p>
+    </section>
+
+    <footer class="footer">
+        <div class="social-media-links">
+            <i class="fab fa-facebook fa-4x"></i>
+            <a href="https://www.instagram.com/deepak_5709/" target="_blank"><i class="fab fa-instagram fa-4x"></i></a>
+            <i class="fab fa-twitter fa-4x"></i>
+        </div>
+        <p>Nature &COPY; 2021, ALL RIGHT RESERVED </p>
+    </footer>
+
+      <!-- external js fo smooth scrolling -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+      
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+      
+            // Store hash
+            var hash = this.hash;
+      
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+      
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+      </script>
+  
+</body>
+</html>
